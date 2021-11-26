@@ -1,0 +1,26 @@
+# Nearly Similar Rectangles Problem solving basic certification
+# python3
+
+
+
+
+
+def nearlySimilarRectangles(sides):
+    
+    #count = 2;
+    LONG_INTEGER = 0;
+    
+    for i in range(0, len(sides)-1):
+        
+        x = sides[i];
+        #print(x);
+        
+        for j in range(i+1, len(sides)):
+            y = sides[j];
+            
+            #print(y)
+            
+            if x[0]/y[0] == x[1]/y[1]:
+                LONG_INTEGER = LONG_INTEGER + 1;
+        
+    return LONG_INTEGER;
